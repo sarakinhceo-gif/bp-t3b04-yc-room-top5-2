@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <title>염창 룸싸롱 TOP5 – 형들이 직접 간 곳만 모았다</title>
+    <meta name="description" content="염창 룸싸롱 TOP5를 진짜 브로들이 직접 경험한 생생 후기와 함께 공개합니다. 가격, 분위기, 서비스까지 다 까발림. 전화 010-6279-0862">
+    <meta name="keywords" content="염창 룸싸롱, 염창 룸싸롱 TOP5, 염창 술집, 염창 유흥, 염창 룸싸롱 추천, 염창 룸싸롱 후기">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b04-yc-room-top5-2.vercel.app">
+    <meta property="og:title" content="염창 룸싸롱 TOP5 – 형들이 직접 간 곳만 모았다">
+    <meta property="og:description" content="염창 룸싸롱 TOP5를 진짜 브로들이 직접 경험한 생생 후기와 함께 공개합니다. 가격, 분위기, 서비스까지 다 까발림. 전화 010-6279-0862">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://t3b04-yc-room-top5-2.vercel.app/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        /* RESET & BASE */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f0ebe3;
+            color: #1a1a1a;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        /* TYPOGRAPHY - oversized & raw */
+        h1, h2, h3, h4 {
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+        }
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            border-left: 0.5rem solid #ff3b30;
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            border-bottom: 0.25rem solid #1a1a1a;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 2.2rem);
+            margin-bottom: 1rem;
+        }
+        h4 {
+            font-size: clamp(1.2rem, 2vw, 1.6rem);
+            margin-bottom: 0.75rem;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            max-width: 70ch;
+        }
+        a {
+            color: #1a1a1a;
+            text-decoration: none;
+            border-bottom: 2px solid #ff3b30;
+            transition: all 0.2s ease;
+            font-weight: 700;
+        }
+        a:hover {
+            background: #ff3b30;
+            color: #f0ebe3;
+            border-bottom-color: transparent;
+        }
+        /* UTILITY - brutalism borders */
+        .brutal-border {
+            border: 4px solid #1a1a1a;
+            box-shadow: 6px 6px 0 rgba(0,0,0,0.2);
+        }
+        .brutal-border-accent {
+            border: 4px solid #ff3b30;
+            box-shadow: 6px 6px 0 rgba(255,59,48,0.3);
+        }
+        /* LAYOUT */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        header {
+            background: #1a1a1a;
+            color: #f0ebe3;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: none;
+            color: #f0ebe3;
+        }
+        .logo:hover {
+            background: transparent;
+            color: #ff3b30;
+        }
+        nav ul {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        nav a {
+            color: #f0ebe3;
+            border-bottom: 2px solid transparent;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        nav a:hover {
+            background: transparent;
+            color: #ff3b30;
+            border-bottom-color: #ff3b30;
+        }
+        .hamburger-menu {
+            display: none;
+            background: none;
+            border: 2px solid #f0ebe3;
+            color: #f0ebe3;
+            font-size: 1.5rem;
+            padding: 0.5rem 0.8rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+        .hamburger-menu:hover {
+            background: #ff3b30;
+            border-color: #ff3b30;
+        }
+        @media (max-width: 768px) {
+            .hamburger-menu {
+                display: block;
+            }
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background: #1a1a1a;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                padding: 1rem;
+                gap: 1rem;
+                border-top: 2px solid #ff3b30;
+            }
+            nav ul.active {
+                display: flex;
+            }
+            nav a {
+                display: block;
+                padding: 0.5rem 0;
+                font-size: 1.2rem;
+            }
+        }
+        .hero {
+            padding: 4rem 0 3rem;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            border-left: 0.25rem solid #ff3b30;
+            padding-left: 1rem;
+            font-weight: 600;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .card {
+            background: #fff;
+            padding: 2rem;
+            transition: all 0.2s ease;
+        }
+        .card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0 rgba(0,0,0,0.15);
+        }
+        .card h3 {
+            border-left: 0.25rem solid #ff3b30;
+            padding-left: 0.75rem;
+        }
+        .card .meta {
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        .tel-link {
+            display: inline-block;
+            background: #ff3b30;
+            color: #f0ebe3;
+            padding: 0.75rem 2rem;
+            font-weight: 900;
+            font-size: 1.2rem;
+            border: 4px solid #1a1a1a;
+            box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .tel-link:hover {
+            background: #1a1a1a;
+            color: #ff3b30;
+            transform: scale(1.02);
+        }
+        .faq {
+            margin: 4rem 0;
+        }
+        .faq-item {
+            border: 4px solid #1a1a1a;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            background: #fff;
+        }
+        .faq-item h4 {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-item h4::after {
+            content: '+';
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+        .faq-item.active h4::after {
+            content: '−';
+        }
+        .faq-item p {
+            display: none;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 2px solid #eee;
+        }
+        .faq-item.active p {
+            display: block;
+        }
+        footer {
+            background: #1a1a1a;
+            color: #f0ebe3;
+            padding: 2rem 0;
+            text-align: center;
+            margin-top: 4rem;
+            border-top: 4px solid #ff3b30;
+        }
+        footer a {
+            color: #ff3b30;
+            border-bottom-color: #ff3b30;
+        }
+        footer a:hover {
+            background: #ff3b30;
+            color: #1a1a1a;
+        }
+        .cta-section {
+            background: #1a1a1a;
+            color: #f0ebe3;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        .cta-section h2 {
+            border-bottom-color: #ff3b30;
+        }
+        .cta-section .tel-link {
+            margin-top: 1.5rem;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <a href="https://t3b04-yc-room-top5-2.vercel.app" class="logo">염창룸싸롱</a>
+            <button class="hamburger-menu" aria-label="메뉴 열기">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/top5">TOP5</a></li>
+                    <li><a href="/info">정보</a></li>
+                    <li><a href="/review">후기</a></li>
+                    <li><a href="tel:01062790862">전화</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <h1>염창 룸싸롱<br>정보 더 까발림</h1>
+            <p>형들이 직접 발로 뛰고 지갑 털어서 겪은 그날의 진실. 가격대, 분위기, 서비스 퀄리티, 그리고 현장감 200% 후기까지 —<br>이 문서 하나면 염창 룸싸롱의 실체가 다 보인다.</p>
+            <p style="margin-top: 1.5rem;"><strong>010-6279-0862</strong> 로 전화하면 형들이 추천하는 꿀조합도 알려줌. 비밀은 아님.</p>
+        </section>
+
+        <section class="container">
+            <h2>💥 가격 & 분위기 완전정복</h2>
+            <div class="card-grid">
+                <div class="card brutal-border">
+                    <div class="meta">💰 가격대</div>
+                    <h3>기본 1인 기준</h3>
+                    <p>보통 15~30만원 사이. 근데 이게 와리가리 심함. 목요일이냐 금요일이냐에 따라, 심지어 마담 기분에 따라도 달라짐. 야간 할증은 무조건 걸림.</p>
+                    <p>고급 코스로 가면 1인 40만원까지도 봄. 대신 그 값 하는 게 확실함 — 양주는 무조건 17년산 이상, 안주는 오마카세 급으로 나옴.</p>
+                </div>
+                <div class="card brutal-border">
+                    <div class="meta">🎵 분위기</div>
+                    <h3>장소별 캐릭터</h3>
+                    <p>A급 업소는 조명이 은은하고 소파도 푹신. B급은 좀 올드한 감성인데 의외로 사장님이 친절하고 서비스 좋음. 신상 업소는 인테리어에 진심이라 인스타용 사진 찍기 좋음.</p>
+                    <p>공통점: 노래방 기기는 항상 최신형. 리모컨 감도는 업소마다 천지차이.</p>
+                </div>
+                <div class="card brutal-border">
+                    <div class="meta">🍸 서비스</div>
+                    <h3>진짜 서비스는?</h3>
+                    <p>사실 룸싸롱에서 '서비스'는 사람마다 기준이 다름. 주량 맞춰주는 곳, 분위기 메이킹 잘해주는 언니가 있는 곳, 사장님이 직접 안주 추천해주는 곳 등.</p>
+                    <p>형이 본 최고 서비스: 입장하자마자 '혹시 속쓰린 음식 드셨냐'고 묻고 생수를 먼저 권한 곳. 디테일의 차이가 곧 서비스의 차이임.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2>🗺️ 염창 지역 핵심 지리</h2>
+            <div class="brutal-border" style="padding: 2rem; background: #fff;">
+                <h3>강변 따라 형성된 룸싸롱 벨트</h3>
+                <p>염창동 룸싸롱은 크게 두 축으로 나뉨. 첫째는 강변북로 인근 — 뷰 좋고 주차 편함. 둘째는 골목 안쪽 — 조용하고 가격이 상대적으로 저렴. 대중교통은 지하철 9호선 염창역에서 도보 10분 이내, 버스는 여러 노선이 지나감.</p>
+                <p>형들 팁: 주말 저녁에는 주차 전쟁이라 발렛비 1~2만원 생각해야 함. 하지만 사장님한테 '오랜만에 왔어요~' 하고 친근하게 말하면 발렛비 깎아주는 경우도 있음.</p>
+            </div>
+        </section>
+
+        <section class="cta-section brutal-border-accent">
+            <div class="container">
+                <h2>지금 전화하면 특별 혜택</h2>
+                <p>이 글 본 사람만 알아두셈. 전화 연결
+</body>
+</html>
