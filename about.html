@@ -1,358 +1,81 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-theme="jade" data-build="a1b2c3d4">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-raw-concrete">
-    <title>염창 룸싸롱 TOP5 – 형들이 직접 간 곳만 모았다</title>
-    <meta name="description" content="염창 룸싸롱 TOP5를 진짜 브로들이 직접 경험한 생생 후기와 함께 공개합니다. 가격, 분위기, 서비스까지 다 까발림. 전화 010-6279-0862">
-    <meta name="keywords" content="염창 룸싸롱, 염창 룸싸롱 TOP5, 염창 술집, 염창 유흥, 염창 룸싸롱 추천, 염창 룸싸롱 후기">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://yeomchang-song-room.hardcoreroom.com/about.html">
-    <meta property="og:title" content="염창 룸싸롱 TOP5 – 형들이 직접 간 곳만 모았다">
-    <meta property="og:description" content="염창 룸싸롱 TOP5를 진짜 브로들이 직접 경험한 생생 후기와 함께 공개합니다. 가격, 분위기, 서비스까지 다 까발림. 전화 010-6279-0862">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://t3b04-yc-room-top5-2.vercel.app/og-image.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <style>
-        /* RESET & BASE */
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #f0ebe3;
-            color: #1a1a1a;
-            line-height: 1.6;
-            min-height: 100vh;
-        }
-        /* TYPOGRAPHY - oversized & raw */
-        h1, h2, h3, h4 {
-            font-weight: 900;
-            line-height: 1.1;
-            letter-spacing: -0.02em;
-            text-transform: uppercase;
-        }
-        h1 {
-            font-size: clamp(2.5rem, 8vw, 5rem);
-            border-left: 0.5rem solid #ff3b30;
-            padding-left: 1rem;
-            margin-bottom: 1.5rem;
-        }
-        h2 {
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            border-bottom: 0.25rem solid #1a1a1a;
-            padding-bottom: 0.5rem;
-            margin-bottom: 2rem;
-        }
-        h3 {
-            font-size: clamp(1.5rem, 3vw, 2.2rem);
-            margin-bottom: 1rem;
-        }
-        h4 {
-            font-size: clamp(1.2rem, 2vw, 1.6rem);
-            margin-bottom: 0.75rem;
-        }
-        p {
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            max-width: 70ch;
-        }
-        a {
-            color: #1a1a1a;
-            text-decoration: none;
-            border-bottom: 2px solid #ff3b30;
-            transition: all 0.2s ease;
-            font-weight: 700;
-        }
-        a:hover {
-            background: #ff3b30;
-            color: #f0ebe3;
-            border-bottom-color: transparent;
-        }
-        /* UTILITY - brutalism borders */
-        .brutal-border {
-            border: 4px solid #1a1a1a;
-            box-shadow: 6px 6px 0 rgba(0,0,0,0.2);
-        }
-        .brutal-border-accent {
-            border: 4px solid #ff3b30;
-            box-shadow: 6px 6px 0 rgba(255,59,48,0.3);
-        }
-        /* LAYOUT */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-        header {
-            background: #1a1a1a;
-            color: #f0ebe3;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .header-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            border: none;
-            color: #f0ebe3;
-        }
-        .logo:hover {
-            background: transparent;
-            color: #ff3b30;
-        }
-        nav ul {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-        nav a {
-            color: #f0ebe3;
-            border-bottom: 2px solid transparent;
-            font-weight: 600;
-            font-size: 1rem;
-        }
-        nav a:hover {
-            background: transparent;
-            color: #ff3b30;
-            border-bottom-color: #ff3b30;
-        }
-        .hamburger-menu {
-            display: none;
-            background: none;
-            border: 2px solid #f0ebe3;
-            color: #f0ebe3;
-            font-size: 1.5rem;
-            padding: 0.5rem 0.8rem;
-            cursor: pointer;
-            text-transform: uppercase;
-            font-weight: 900;
-        }
-        .hamburger-menu:hover {
-            background: #ff3b30;
-            border-color: #ff3b30;
-        }
-        @media (max-width: 768px) {
-            .hamburger-menu {
-                display: block;
-            }
-            nav ul {
-                display: none;
-                flex-direction: column;
-                background: #1a1a1a;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                padding: 1rem;
-                gap: 1rem;
-                border-top: 2px solid #ff3b30;
-            }
-            nav ul.active {
-                display: flex;
-            }
-            nav a {
-                display: block;
-                padding: 0.5rem 0;
-                font-size: 1.2rem;
-            }
-        }
-        .hero {
-            padding: 4rem 0 3rem;
-        }
-        .hero p {
-            font-size: 1.3rem;
-            border-left: 0.25rem solid #ff3b30;
-            padding-left: 1rem;
-            font-weight: 600;
-        }
-        .card-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-        .card {
-            background: #fff;
-            padding: 2rem;
-            transition: all 0.2s ease;
-        }
-        .card:hover {
-            transform: translate(-4px, -4px);
-            box-shadow: 12px 12px 0 rgba(0,0,0,0.15);
-        }
-        .card h3 {
-            border-left: 0.25rem solid #ff3b30;
-            padding-left: 0.75rem;
-        }
-        .card .meta {
-            font-size: 0.9rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 1rem;
-            color: #555;
-        }
-        .tel-link {
-            display: inline-block;
-            background: #ff3b30;
-            color: #f0ebe3;
-            padding: 0.75rem 2rem;
-            font-weight: 900;
-            font-size: 1.2rem;
-            border: 4px solid #1a1a1a;
-            box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
-            transition: all 0.2s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .tel-link:hover {
-            background: #1a1a1a;
-            color: #ff3b30;
-            transform: scale(1.02);
-        }
-        .faq {
-            margin: 4rem 0;
-        }
-        .faq-item {
-            border: 4px solid #1a1a1a;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
-            background: #fff;
-        }
-        .faq-item h4 {
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .faq-item h4::after {
-            content: '+';
-            font-size: 1.5rem;
-            font-weight: 900;
-        }
-        .faq-item.active h4::after {
-            content: '−';
-        }
-        .faq-item p {
-            display: none;
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 2px solid #eee;
-        }
-        .faq-item.active p {
-            display: block;
-        }
-        footer {
-            background: #1a1a1a;
-            color: #f0ebe3;
-            padding: 2rem 0;
-            text-align: center;
-            margin-top: 4rem;
-            border-top: 4px solid #ff3b30;
-        }
-        footer a {
-            color: #ff3b30;
-            border-bottom-color: #ff3b30;
-        }
-        footer a:hover {
-            background: #ff3b30;
-            color: #1a1a1a;
-        }
-        .cta-section {
-            background: #1a1a1a;
-            color: #f0ebe3;
-            padding: 3rem 2rem;
-            text-align: center;
-            margin: 3rem 0;
-        }
-        .cta-section h2 {
-            border-bottom-color: #ff3b30;
-        }
-        .cta-section .tel-link {
-            margin-top: 1.5rem;
-            display: inline-block;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>염창 룸싸롱 TOP5 — 정보</title>
+  <meta name="description" content="염창 지역 최고의 룸싸롱을 상세히 살펴보고, 인원·시간·목적별 체크리스트와 현지 시그널을 통해 현명한 선택을 돕습니다.">
+  <meta name="keywords" content="염창 룸싸롱, 염창 룸싸롱 정보, 염창 나이트클럽, 염창 클럽 가이드, 염창 엔터테인먼트">
+  <link rel="canonical" href="https://yeomchang-song-room.hardcoreroom.com/about.html">
+  <meta property="og:title" content="염창 룸싸롱 TOP5 — 정보">
+  <meta property="og:description" content="염창 지역 최고의 룸싸롱에 대한 상세 정보와 상황별 이용 가이드를 확인하세요.">
   <meta property="og:url" content="https://yeomchang-song-room.hardcoreroom.com/about.html">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/assets/main.css">
 </head>
 <body>
-    <header>
-        <div class="container header-inner">
-            <a href="https://t3b04-yc-room-top5-2.vercel.app" class="logo">염창룸싸롱</a>
-            <button class="hamburger-menu" aria-label="메뉴 열기">☰</button>
-            <nav>
-                <ul>
-                    <li><a href="/">홈</a></li>
-                    <li><a href="/top5">TOP5</a></li>
-                    <li><a href="/info">정보</a></li>
-                    <li><a href="/review">후기</a></li>
-                    <li><a href="tel:01062790862">전화</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- Navigation (공통) -->
+  <nav class="r-wrap-wljv" id="main-nav">
+    <input type="checkbox" id="nav-toggle">
+    <label for="nav-toggle" class="r-ico-d4vi">메뉴</label>
+    <ul>
+      <li><a href="/top5">TOP5</a></li>
+      <li><a href="/info">정보</a></li>
+      <li><a href="/faq">FAQ</a></li>
+      <li><a href="/contact">연락처</a></li>
+    </ul>
+  </nav>
 
-    <main>
-        <section class="hero container">
-            <h1>염창 룸싸롱<br>정보 더 까발림</h1>
-            <p>형들이 직접 발로 뛰고 지갑 털어서 겪은 그날의 진실. 가격대, 분위기, 서비스 퀄리티, 그리고 현장감 200% 후기까지 —<br>이 문서 하나면 염창 룸싸롱의 실체가 다 보인다.</p>
-            <p style="margin-top: 1.5rem;"><strong>010-6279-0862</strong> 로 전화하면 형들이 추천하는 꿀조합도 알려줌. 비밀은 아님.</p>
-        </section>
+  <main class="r-ico-d4vi">
+    <section class="r-section">
+      <h1>염창 룸싸롱 안내 – 기본 개요</h1>
+      <p>염창은 대전·충청권에서 가장 활발한 나이트 엔터테인먼트 지역 중 하나이며, 다양한 컨셉과 분위기의 룸싸롱이 밀집해 있습니다. 이 페이지에서는 해당 지역에서 주목받는 다섯 곳을 넘어, 전반적인 이용 흐름, 핵심 체크포인트, 그리고 현지에서 흔히 마주치는 시그널을 정리했습니다.</p>
+      <p>첫 방문자의 경우, 사전 정보가 부족해 어색함을 느끼기 쉬운데요. 그래서 우리는 “몇 명이 함께 갈까?”, “어떤 시간대가 가장 안전할까?”, “특정 목적(친목, 회식, 개인시간)에는 어떤 장소가 적합한가?” 같은 상황별 질문에 답변을 제시합니다. 이를 통해 방문 전 불필요한 고민을 최소화하고, 현지 분위기에 자연스럽게 녹아들 수 있도록 돕습니다.</p>
+    </section>
 
-        <section class="container">
-            <h2>💥 가격 & 분위기 완전정복</h2>
-            <div class="card-grid">
-                <div class="card brutal-border">
-                    <div class="meta">💰 가격대</div>
-                    <h3>기본 1인 기준</h3>
-                    <p>보통 15~30만원 사이. 근데 이게 와리가리 심함. 목요일이냐 금요일이냐에 따라, 심지어 마담 기분에 따라도 달라짐. 야간 할증은 무조건 걸림.</p>
-                    <p>고급 코스로 가면 1인 40만원까지도 봄. 대신 그 값 하는 게 확실함 — 양주는 무조건 17년산 이상, 안주는 오마카세 급으로 나옴.</p>
-                </div>
-                <div class="card brutal-border">
-                    <div class="meta">🎵 분위기</div>
-                    <h3>장소별 캐릭터</h3>
-                    <p>A급 업소는 조명이 은은하고 소파도 푹신. B급은 좀 올드한 감성인데 의외로 사장님이 친절하고 서비스 좋음. 신상 업소는 인테리어에 진심이라 인스타용 사진 찍기 좋음.</p>
-                    <p>공통점: 노래방 기기는 항상 최신형. 리모컨 감도는 업소마다 천지차이.</p>
-                </div>
-                <div class="card brutal-border">
-                    <div class="meta">🍸 서비스</div>
-                    <h3>진짜 서비스는?</h3>
-                    <p>사실 룸싸롱에서 '서비스'는 사람마다 기준이 다름. 주량 맞춰주는 곳, 분위기 메이킹 잘해주는 언니가 있는 곳, 사장님이 직접 안주 추천해주는 곳 등.</p>
-                    <p>형이 본 최고 서비스: 입장하자마자 '혹시 속쓰린 음식 드셨냐'고 묻고 생수를 먼저 권한 곳. 디테일의 차이가 곧 서비스의 차이임.</p>
-                </div>
-            </div>
-        </section>
+    <section class="r-section">
+      <h2>인원·시간·목적에 따른 선택 기준</h2>
+      <p><strong>소규모(2~4명) 방문</strong>은 조용하고 프라이버시가 보장된 작은 룸을 선호합니다. 이런 경우, 내부 인테리어가 차분하고, 개인 맞춤 서비스가 가능한 곳을 선택하면 대화와 휴식에 집중할 수 있습니다. 예약 시 최소 인원 제한이 있는지 확인하고, 입장 전 전화로 가용성을 물어보는 것이 좋습니다.</p>
+      <p><strong>대규모(5명 이상) 파티</strong>라면 넓은 라운지와 다수의 개인 룸이 동시에 운영되는 복합 공간을 찾아야 합니다. 이때는 사전에 파티 패키지나 음료 무제한 옵션을 확인하고, 추가 요금 정책을 명확히 이해하는 것이 중요합니다. 또한, 대형 파티는 저녁 늦은 시간보다 오후 초반에 방문하는 것이 소음 관리와 주변 환경에 더 유리합니다.</p>
+      <p><strong>시간대별 특징</strong>을 살펴보면, 평일 저녁 7시~9시가 가장 한산하고 서비스가 부드럽게 진행됩니다. 주말이나 공휴일은 예약이 급증하므로 미리 예약을 확정하고, 경우에 따라 사전 보증금을 요구받을 수 있습니다. 늦은 밤(자정 이후) 방문은 일부 장소에서 제한될 수 있으니, 운영 시간을 반드시 체크하세요.</p>
+      <p><strong>목적별 추천</strong>으로는 친목·회식 용도는 분위기가 밝고, 간단한 안주와 주류가 제공되는 곳이 적합합니다. 반면, 개인적인 휴식이나 데이트 목적이라면 조명과 음악이 부드러운 고급스러운 분위기의 룸을 선택하는 것이 좋습니다. 각 룸마다 제공되는 부가 서비스(마사지, 와인, 전용 음향 등)가 다르니, 목적에 맞는 부가 서비스를 미리 확인해 보세요.</p>
+    </section>
 
-        <section class="container">
-            <h2>🗺️ 염창 지역 핵심 지리</h2>
-            <div class="brutal-border" style="padding: 2rem; background: #fff;">
-                <h3>강변 따라 형성된 룸싸롱 벨트</h3>
-                <p>염창동 룸싸롱은 크게 두 축으로 나뉨. 첫째는 강변북로 인근 — 뷰 좋고 주차 편함. 둘째는 골목 안쪽 — 조용하고 가격이 상대적으로 저렴. 대중교통은 지하철 9호선 염창역에서 도보 10분 이내, 버스는 여러 노선이 지나감.</p>
-                <p>형들 팁: 주말 저녁에는 주차 전쟁이라 발렛비 1~2만원 생각해야 함. 하지만 사장님한테 '오랜만에 왔어요~' 하고 친근하게 말하면 발렛비 깎아주는 경우도 있음.</p>
-            </div>
-        </section>
+    <section class="r-section">
+      <h2>현장 체크리스트 – 반드시 확인해야 할 요소</h2>
+      <p>첫 번째 체크포인트는 <strong>입구와 안내표시</strong>입니다. 정식 등록된 사업장이라면 외부 간판에 사업자 등록 번호와 전화번호가 명시돼 있습니다. 번호가 누락되었거나, 지나치게 어두운 입구는 사전에 확인이 필요합니다.</p>
+      <p>두 번째는 <strong>청결 상태와 위생 관리</strong>입니다. 바닥, 테이블, 화장실 등의 청소가 정기적으로 이루어지는지 관찰하고, 직원이 손소독제나 마스크 착용 여부를 확인하세요. 특히, 최근 전염병 상황을 고려해 위생 점검표를 제시받을 수 있는지 물어보면 안심이 됩니다.</p>
+      <p>세 번째는 <strong>직원 친절도와 서비스 흐름</strong>입니다. 문의 시 친절하게 대응하고, 원활한 주문 및 결제 시스템을 갖춘 곳은 전반적인 체험 만족도를 크게 높입니다. 서비스가 느리거나 불친절하면 바로 다른 장소로 이동하는 것이 현명합니다.</p>
+      <p>마지막으로 <strong>요금 구조와 부가 비용</strong>을 명확히 파악해야 합니다. 기본 룸 요금 외에 음료, 안주, 추가 서비스에 대한 별도 청구 여부와 각 항목의 가격대를 미리 확인하면, 예상치 못한 비용 발생을 방지할 수 있습니다.</p>
+    </section>
 
-        <section class="cta-section brutal-border-accent">
-            <div class="container">
-                <h2>지금 전화하면 특별 혜택</h2>
-                <p>이 글 본 사람만 알아두셈. 전화 연결
+    <section class="r-section">
+      <h2>지역 시그널 – 현지에서 흔히 관찰되는 특징</h2>
+      <p>염창에서는 특정 거리마다 “특징 구역”이 형성됩니다. 예를 들어, <strong>1번가</strong>는 고급 라운지와 프리미엄 서비스를 주로 제공하고, <strong>2번가</strong>는 저렴한 가격대와 활기찬 분위기가 특징입니다. 이런 구역 구분은 방문 목적에 따라 적절히 선택하면 좋은 경험을 만들 수 있습니다.</p>
+      <p>또한, <strong>교통 접근성</strong>을 고려하는 것이 중요합니다. 지하철 1호선 염창역에서 도보 5분 내외에 위치한 곳은 야간 귀가 시 안전하고 편리합니다. 반면, 버스 전용 도로에 있는 일부 장소는 차량 접근이 제한될 수 있으니, 택시 이용 여부를 미리 체크하는 것이 좋습니다.</p>
+      <p>마지막으로, <strong>주변 식당 및 카페</strong>와의 연계성을 생각해 보세요. 라운지 이용 전후에 가볍게 식사하거나 디저트를 즐길 수 있는 곳이 인접해 있으면, 전체 일정이 자연스럽게 흐르며 시간 관리가 쉬워집니다.</p>
+    </section>
+
+    <section class="r-section">
+      <h2>자주 묻는 질문 (FAQ)</h2>
+      <h3>Q1. 예약은 어떻게 해야 하나요?</h3>
+      <p>대부분의 룸싸롱은 전화 또는 공식 웹사이트를 통해 예약을 받습니다. 평일 저녁은 바로 입장이 가능한 경우가 많지만, 주말·공휴일은 최소 24시간 전에 전화 예약을 권장합니다. 예약 시 인원, 원하는 시간, 선택하고자 하는 서비스 옵션을 정확히 전달하면 원활히 진행됩니다.</p>
+      <h3>Q2. 현금만 가능한 곳이 있나요?</h3>
+      <p>일부 전통적인 장소는 현금 결제만을 받지만, 최근에는 카드와 모바일 결제를 지원하는 곳이 늘고 있습니다. 현금만 가능한 경우, 최소 결제 금액과 거스름돈 반환 정책을 사전에 확인해 두는 것이 좋습니다.</p>
+      <h3>Q3. 음주·흡연 정책은 어떻게 되나요?</h3>
+      <p>대부분의 룸싸롱은 실내 음주를 허용하지만, 흡연은 별도 흡연실에서만 가능하도록 규제하고 있습니다. 금연 구역이 명시돼 있는 경우, 해당 구역을 준수해야 하며, 흡연 구역 이용 시 추가 요금이 부과될 수 있습니다.</p>
+      <h3>Q4. 여성 동반이 가능한가요?</h3>
+      <p>대다수의 장소는 남성 고객만을 대상으로 하지만, 최근에는 여성 동반이 가능한 프라이빗 룸을 제공하는 곳도 늘고 있습니다. 예약 시 “여성 동반 여부”를 명확히 물어보고, 추가 요금이 발생할 경우 사전에 확인하세요.</p>
+    </section>
+
+    <section class="r-section">
+      <h2>마무리 조언</h2>
+      <p>염창 룸싸롱을 처음 이용한다면, 위에서 제시한 체크리스트와 상황별 선택 기준을 활용해 사전 준비를 철저히 하는 것이 가장 현명합니다. 특히, 인원 규모와 방문 목적에 맞는 룸을 미리 정하고, 현장 시그널을 파악하면 현지에서의 불필요한 갈등이나 오해를 크게 줄일 수 있습니다.</p>
+      <p>마지막으로, 즐거운 시간을 보내기 위해서는 자신과 동행자의 편안함을 최우선으로 생각하고, 언제든지 불편함을 느낀다면 즉시 스태프에게 알리는 자세가 필요합니다. 이렇게 준비된 방문은 좋은 추억과 안전한 경험을 동시에 제공할 것입니다.</p>
+    </section>
+
+    <footer class="r-footer">
+      <p>&copy; 2026 염창 룸싸롱 가이드. All rights reserved.</p>
+    </footer>
+  </main>
 </body>
 </html>
